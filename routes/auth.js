@@ -24,7 +24,6 @@ module.exports = {
     },
     createUser:(req,res,next)=>{
          //check if id exists
-
           var idExists;
 
          authModel.find({id:req.body.username,password:req.body.password}).exec((err,docs)=>{
